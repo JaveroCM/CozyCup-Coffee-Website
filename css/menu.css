@@ -1,0 +1,307 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("hc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #d87495;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto 20px auto;
+    max-width: 800px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/* Style for the beverage link */
+.beverage-link {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.beverage-content {
+    display: block; /* Ensures it behaves as a block element */
+    text-align: center; /* Centers text and image inside */
+    background-color: #f9f9f9; /* Light background for better readability */
+    border: 1px solid #ddd; /* Border to visually separate content */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.beverage-content img {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #ddd; /* Bottom border to separate from text */
+}
+
+.beverage-content h2 {
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.beverage-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Style for the menu categories section */
+#menu-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* Style for each category */
+#menu-categories .category {
+    flex-basis: 30%;
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(155, 156, 249);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style for the category titles */
+#menu-categories .category h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Style for the category descriptions */
+#menu-categories .category p {
+    font-size: 16px;
+    color: #000000;
+    margin: 0 20px 20px;
+}
+
+/* Style for the category images */
+#menu-categories .category img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Add hover effect to each category */
+#menu-categories .category:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  
+}
+
+#specials {
+    background-image: url("shux.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#specials h2 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#specials p {
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.special-item {
+    display: inline-block;
+    width: 22%;
+    margin: 1.5%;
+    box-sizing: border-box;
+    background-color: rgb(155, 156, 249);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.special-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+.special-item h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin: 10px;
+}
+
+.special-item p {
+    font-size: 0.9em;
+    color: #ffffff;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .special-item {
+        width: 45%;
+        margin: 2.5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .special-item {
+        width: 90%;
+        margin: 5% 0;
+    }
+}
+
+/* Add a hover effect to the special item */
+#specials .special-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+footer {
+    background-color:  #d87495;
+    color: #fff;
+    height: 1o0px; 
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+}
+
+.footer-section a img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer-section form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-section input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+}
+
+.footer-section button {
+    background-color: #e81d64;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #e84467;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 0.8em;
+}

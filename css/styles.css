@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("hc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #d87495;
+    color: #120d0d;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(247, 138, 182, 0.657);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.hero {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 100px 20px;
+    color: rgb(0, 0, 0);
+}
+
+/* Style for the gallery section */
+#gallery {
+    padding: 40px 20px; 
+    background-image: url("shux.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Style for the gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Style for each gallery item */
+.gallery-item {
+    position: relative; 
+    overflow: hidden;
+    width: 100%; 
+    height: 200px;
+}
+
+/* Style for images within gallery items */
+.gallery-item img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Style for the caption */
+.caption {
+    position: absolute; 
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    padding: 10px;
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 
+    0.5px 0.5px 0 #000,
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000;
+}
+
+
+/* Hover effect for gallery images */
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Grid Layout for Featured Products */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+    min-width: 100px; /* Adjust this value based on your design */
+    text-align: center;
+}
+
+/* Image Styling */
+.col img {
+    width: 60%;
+    height: auto;
+    image-orientation: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings and Paragraphs */
+#menu h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#menu h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#menu p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* General Section Styles */
+#events {
+    padding: 2rem;
+    color: #000000; 
+}
+
+#events h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.event {
+    background-image: url("shux.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.event h3 {
+    font-size: 1.5rem;
+    color: #e73473;
+    margin-bottom: 0.5rem;
+}
+
+.event p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #5a3d5c; 
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4a2a4c;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #events {
+        padding: 1rem;
+    }
+
+    .event {
+        padding: 1rem;
+    }
+
+    .event h3 {
+        font-size: 1.25rem;
+    }
+
+    .event p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+footer {
+    background-color:  #d87495;
+    color: #fff;
+    height: 1o0px; 
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ccc;
+}
+
+.footer-section a img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer-section form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-section input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+}
+
+.footer-section button {
+    background-color: #e81d64;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #e84467;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 0.8em;
+}
