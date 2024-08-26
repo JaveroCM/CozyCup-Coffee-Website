@@ -66,8 +66,8 @@ main {
     font-size: 2em;
 }
 
-#beverages h2 {
-    margin-bottom: 10px;
+#beverages h2 title {
+    margin-bottom: 20px;
     font-size: 1.5em;
     text-align: left;
 }
