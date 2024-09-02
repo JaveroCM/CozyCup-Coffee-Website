@@ -18,9 +18,15 @@ Heaven's Cloud Cafe is a serene and cozy oasis offering a delightful selection o
 ![Menu Page](img/menu.png)
 *The menu page displays a beautifully organized selection of the cafe's offerings, with creative descriptions for each item.*
 
+![About Us Page](img/.png)
+**
+
+![Contact Page](img/.png)
+**
+
 ## About the Authors
 
-<img src="https://github.com/your-github-JaveroCM.png" width="150" style="border-radius: 50%;" />
+<img src="https://github.com/your-github-JaveroCM.png" width="150" style="border-radius: 50%;"/>
 
 **Name:** Carmela Marie R. Javero
 **Email:** 202080472@psu.palawan.edu
